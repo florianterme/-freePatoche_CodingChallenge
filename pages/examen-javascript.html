@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="../js/script.js"></script>
+    </head>
+    <body>
+        <form action="#">
+          <input type="text" id="nb1" />
+          <input type="text" id="nb2" />
+            <br /><br />
+          <input type="button" onClick="valenter();" value="diviser" />
+        </form>
+        <br />
+            <p>--------------------</p>
+        <form action="#">
+          <input type="text" id="resultat" value="Entrez un entier..."/>
+            <br /><br />
+            <input type="button" id="chiffre0" onClick="nb0();" value="0" />
+            <input type="button" id="chiffre1" onClick="nb1();" value="1" />
+            <input type="button" id="chiffre2" onClick="nb2();" value="2" />
+            <input type="button" id="chiffre3" onClick="nb3();" value="3" />
+            <input type="button" id="chiffre4" onClick="nb4();" value="4" />
+            <input type="button" id="chiffre5" onClick="nb5();" value="5" />
+            <input type="button" id="chiffre6" onClick="nb6();" value="6" />
+            <input type="button" id="chiffre7" onClick="nb7();" value="7" />
+            <input type="button" id="chiffre8" onClick="nb8();" value="8" />
+            <input type="button" id="chiffre9" onClick="nb9();" value="9" />
+            <br /><br />
+            <input type="button" onClick="division();" value="/" />
+            <input type="button" onClick="incrémentationde2();" value="+2" />
+            <br /><br />
+            <input type="button" onClick="multiplication();" value="*5" />
+            <input type="button" onClick="divi4();" value="/4" />
+            <input type="button" onClick="calcullong();" value="/10*2-20" />
+            <input type="button" onClick="reset();" value="reset" />
+        </form>
+    <br />
+            <p>--------------------</p>
+        <form action="#">
+            <input type="text" id="gramme" onKeyPress="convgrtol();" value="grammes"/>
+            <input type="text" id="litre" value="litres"/>
+            <input type="button" onClick="convltogr();" value="grammes to litres" />
+            <br /><br />
+            <input type="text" id="yuan" onKeyPress="convyuantoeuro();" value="yuan"/>
+            <input type="text" id="euro" value="euro"/>
+            <input type="button" onClick="conveurotoyuan();" value="euro to yuan" />
+        </form>
+    <br />
+            <p>--------------------</p>
+        <form action="#">
+            <input type="text" id="decimal"  value="decimal"/>
+            <input type="text" id="entier" value="entier"/>
+            <input type="button" onClick="arrondi();" value="entier" />
+        </form>
+    <br />
+            <p>--------------------</p>
+        <form action="#">
+            <input type="text" id="mot" />
+            <input type="text" id="groupemot" />
+            <input type="button" onClick="ajoutmot();" value="ajouter" />
+        </form>
+    <br />
+            <p>--------------------</p>
+    <br />
+            <p>--------------------</p>
+        <form action="#">
+            <input type="button" onClick="resolution();" value="resolution"/>
+            <input type="button" onClick="resdiv2();" value="resolution/2"/>
+        </form>
+    <br />
+            <p>--------------------</p>
+        <div id="coulaleat" style="width: 100px; height: 100px;"></div>
+        <form action="#">
+            <input type="button" onClick="rgbaleat();" value="random"/>
+        </form>
+     <br />
+            <p>--------------------</p>
+        <div style="text-align: center">
+            <h1 id=h1>bonjour</h1>
+            <input type="range" min="1" max="100" value="50" id="slide" onchange="tailleh1();">
+            <br>
+        </div>
+        <div style="text-align: center">
+            <input type="range" min="1" max="100" value="50" id="gout" onchange="gout();">
+            <br>
+        </div>
+    </body>
+    <script src="../js/script.js"></script>
+
+</html>
